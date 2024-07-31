@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Minha Jornada</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="Portifolio/css/styles.css" rel="stylesheet" />
+    </head>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const toggles = document.querySelectorAll('.toggle-modules');
+
+    toggles.forEach(toggle => {
+        toggle.addEventListener('click', function() {
+            const target = document.querySelector(this.dataset.target);
+            const isVisible = target.classList.contains('show');
+
+            // Toggle visibility
+            if (isVisible) {
+                target.classList.remove('show');
+                target.style.display = 'none';
+                this.classList.add('collapsed');
+            } else {
+                target.classList.add('show');
+                target.style.display = 'block';
+                this.classList.remove('collapsed');
+            }
+        });
+    });
+});
+
+        </script>
+            <style>
+  
+  .contact-card {
+            background-color: #003366; /* Azul escuro */
+            color: white;
+            border: none;
+        }
+        .icon-bg {
+            background-color: #000; /* Preto */
+            border-radius: 50%;
+            padding: 10px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            width: 40px;
+            height: 40px;
+        }
+        .contact-info {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Garante que o conteúdo do card está centralizado */
+        }
+        .contact-info span {
+            color: white;
+        }
+    </style>
+    <body id="page-top">
+
+        <nav class="navbar navbar-expand-lg text-uppercase fixed-top" id="mainNav" style="background-color: #1a252f;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#page-top">Jonatã Mendes</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Sobre min</a></li>
+                  <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#formacao">Formação</a></li>
+                  <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#linguagens">Linguagens</a></li>
+                  <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contato</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+                  <!-- Masthead-->
+                  <header class="masthead bg-primary text-white text-center" style="height: 100%;">
+                      <div class="container d-flex align-items-center flex-column" style="height: 100%;">
+                          <!-- Masthead Avatar Image-->
+                          <img class="masthead-avatar mb-5" src="Portifolio/assets/imgs/foto-perfil.jpg" style="border-radius: 50%;" alt="..." />
+                          <!-- Masthead Heading-->
+                          <h1 class="masthead-heading text-uppercase mb-0">Cientista da Computação</h1>
+                          <!-- Icon Divider-->
+                          <div class="divider-custom divider-light">
+                              <div class="divider-custom-line"></div>
+                              <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                              <div class="divider-custom-line"></div>
+                          </div>
+                          <!-- Masthead Subheading-->
+                          <p class="masthead-subheading font-weight-light mb-0">Desenvolvedor Backend - Designer Gráfico - VideoMaker</p>
+                      </div>
+                  </header>
+        
+<!-- About Section-->
+<section class="page-section bg-primary text-white mb-0" id="about">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">Sobre Min</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content-->
+                <div class="row">
+                    <div class="col-lg-4 ms-auto"><p class="lead">Estou nessa jornada a mais ou menos 5 anos e sinto orgulho em dizer que apenas segui meu instinto.
+                    Atualmente como Backend Pleno com um conhecimento básico do Front migrando gradualmente para FullStack
+                    </p></div>
+                    <div class="col-lg-4 me-auto"><p class="lead">Desenvolvo Projetos voltados para automação, Pesquisa Ciêntifica, e Aplicativos.Meu objetivo de trabalho principal é observar melhorar e automatizar</p></div>
+                </div>
+                <!-- About Section Button-->
+                <div class="text-center mt-4">
+                    <a class="btn btn-xl btn-outline-light" href="https://drive.google.com/file/d/1KV-Q3VnWz5YkYxBJhNTd5wfsQwVVTAz6/view?usp=drive_link">
+                        <i class="fas fa-download me-2"></i>
+                        Meu Curriculo
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="formacao" class="bg-light py-5">
+    <div class="container text-center">
+        <!-- Título da Seção -->
+        <h2 class="section-title">Formação</h2>
+
+        <!-- Logo da Instituição -->
+        <div class="institution-logo mb-4">
+            <img src="Portifolio/assets/imgs/logo_iema.png" alt="Logo da Instituição" class="img-fluid" style="max-width: 200px;">
+        </div>
+
+        <!-- Descrição do Curso -->
+        <p class="course-description mb-4">
+            Técnico em Informática
+        </p>
+
+        <!-- Módulos Cursados -->
+        <div class="row">
+            <div class="col-lg-6">
+                <h3>Módulos Cursados</h3>
+                <button class="btn btn-primary w-100 toggle-modules" data-target="#modules-1">
+                        Módulos <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div id="modules-1" class="modules-list collapse">
+                <ul>
+                    <li>Arquitetura de Computadores</li>
+                    <li>Banco de Dados</li>
+                    <li>Redes de Computadores</li>
+                    <li>Programação Web</li>
+                    <li>Sistemas Operacionais</li>
+                    <li>Segurança da Informação</li>
+                    <li>Java e Orientação a Objetos</li>
+                    <li>Estrutura de dados com linguagem C</li>
+                    <li>Analise de Sistemas</li>
+                    <li>Lógica de Programação</li>
+                    <li>Algoritimos</li>
+                    <li>Segurança da Informação</li>
+                    <!-- Adicione mais módulos conforme necessário -->
+                </ul>
+                    </div>
+            </div>
+            <!-- Projetos e Destaques -->
+            <div class="col-lg-6">
+                <h3>Projetos e Destaques</h3>
+                <ul>
+                    <li>Desenvolvimento de um Sistema de Gerenciamento de Estoque</li>
+                    <li>Participação em um Projeto de Segurança de Rede</li>
+                    <li>Implementação de um Portal Web para a Escola</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center">
+
+        <!-- Logo da Instituição -->
+        <div class="institution-logo mb-4">
+            <img src="Portifolio/assets/imgs/cruzeirologo.png" alt="Logo da Instituição" class="img-fluid" style="max-width: 200px;">
+        </div>
+
+        <!-- Descrição do Curso -->
+        <p class="course-description mb-4">
+            Ciências da Computação
+        </p>
+        <!-- Descrição do Curso -->
+        <p class="course-description mb-4">
+            Em Andamento
+        </p>
+
+        <!-- Módulos Cursados -->
+        <div class="row">
+            <div class="col-lg-6">
+                <h3>Módulos Cursados até o momento</h3>
+                <button class="btn btn-primary w-100 toggle-modules" data-target="#modules-2">
+                        Módulos <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div id="modules-2" class="modules-list collapse">
+                <ul>
+                <li>Programação Orientada a Objetos - 80 horas</li>
+                    <li>Programação Web - 80 horas</li>
+                    <li>Circuitos Lógicos - 80 horas</li>
+                    <li>Ambientação Digital - 20 horas</li>
+                    <li>Modelagem de Dados - 60 horas</li>
+                    <li>Matemática Aplicada - 60 horas</li>
+                    <li>Técnica de Desenvolvimento e Algoritmos - 60 horas</li>
+                    <li>Cálculo Diferencial e Integral I - 80 horas</li>
+                    <li>Visualização da Informação - 60 horas</li>
+                    <li>Engenharia de Requisitos e Processos de Software - 40 horas</li>
+                    <li>Estruturas de Dados Lineares - 60 horas</li>
+                    <li>Projeto de Software - 60 horas</li>
+                    <li>Banco de Dados - 60 horas</li>
+       
+                    
+                    <!-- Adicione mais módulos conforme necessário -->
+                </ul>
+                    </div>
+            </div>
+            <!-- Projetos e Destaques -->
+            <div class="col-lg-6">
+                <h3>Projetos e Destaques</h3>
+                <ul>
+                    <li>Desenvolvimento de um Sistema de Gerenciamento de Estoque</li>
+                    <li>Participação em um Projeto de Segurança de Rede</li>
+                    <li>Implementação de um Portal Web para a Escola</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section id="cursos" class="bg-light py-5">
+    <div class="container text-center">
+        <!-- Título da Seção -->
+        <h2 class="section-title">Cursos Em andamento</h2>
+
+        <!-- Curso 2 -->
+        <div class="course mb-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="Portifolio/assets/imgs/javadio.webp" style="max-width: 200px;" alt="Logo Curso 2" class="img-fluid course-logo">
+                    <p>Bootcamp Banco PAN Java Developer</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="Portifolio/assets/imgs/spring.webp" style="max-width: 200px;" alt="Logo Curso 2" class="img-fluid course-logo">
+                    <p>Bootcamp Cognizant - Arquitetura com Spring Boot e Cloud</p>
+                </div>
+            </div>
+        </div>
+
+            
+               
+    
+
+    </div>
+</section>
+
+
+<section id="linguagens" class="bg-dark text-light py-5">
+    <div class="container">
+        <!-- Título da Seção -->
+        <h2 class="section-title text-center mb-5">Linguagens</h2>
+
+        <!-- Container para as Linguagens -->
+        <div class="row">
+            <!-- Linguagem 1 -->
+            <div class="col-md-4 d-flex flex-column align-items-center mb-4">
+                <img src="Portifolio/assets/imgs/java.png" style="max-width: 200px;" alt="Logo Linguagem 1" class="img-fluid language-logo mb-2">
+                <p class="language-name mb-2">Java</p>
+                
+                <div class="progress-container">
+                    <progress class="progress-bar" value="60" max="100"></progress><p class="language-name mb-2">Pleno</p>
+                </div>
+                
+            </div>
+            <div class="col-md-4 d-flex flex-column align-items-center mb-4">
+                <img src="Portifolio/assets/imgs/script-java.png" style="max-width: 200px;" alt="Logo Linguagem 1" class="img-fluid language-logo mb-2">
+                <p class="language-name mb-2">JavaScript</p>
+                <div class="progress-container">
+                    <progress class="progress-bar" value="30" max="100"></progress><p class="language-name mb-2">Junior</p>
+                </div>
+            </div>
+            <!-- Linguagem 2 -->
+            <div class="col-md-4 d-flex flex-column align-items-center mb-4">
+                <img src="Portifolio/assets/imgs/pitao.png" style="max-width: 200px;" alt="Logo Linguagem 2" class="img-fluid language-logo mb-2">
+                <p class="language-name mb-2">Python</p>
+                <div class="progress-container">
+                    <progress class="progress-bar" value="50" max="100"></progress><p class="language-name mb-2">Junior</p>
+                </div>
+            </div>
+            <!-- Linguagem 3 -->
+            <div class="col-md-4 d-flex flex-column align-items-center mb-4">
+                <img src="Portifolio/assets/imgs/php.png" style="max-width: 200px;" alt="Logo Linguagem 3" class="img-fluid language-logo mb-2">
+                <p class="language-name mb-2">PHP</p>
+                <div class="progress-container">
+                    <progress class="progress-bar" value="60" max="100"></progress><p class="language-name mb-2">Pleno</p>
+                </div>
+            </div>
+            <!-- Linguagem 4 -->
+            <div class="col-md-4 d-flex flex-column align-items-center mb-4">
+                <img src="Portifolio/assets/imgs/c-.png" style="max-width: 200px;" alt="Logo Linguagem 4" class="img-fluid language-logo mb-2">
+                <p class="language-name mb-2">C</p>
+                <div class="progress-container">
+                    <progress class="progress-bar" value="30" max="100"></progress><p class="language-name mb-2">Junior</p>
+                </div>
+            </div>
+            <!-- Linguagem 5 -->
+            <div class="col-md-4 d-flex flex-column align-items-center mb-4">
+                <img src="Portifolio/assets/imgs/codificacao.png" style="max-width: 200px;" alt="Logo Linguagem 5" class="img-fluid language-logo mb-2">
+                <p class="language-name mb-2">HTML+CSS</p>
+                <div class="progress-container">
+                    <progress class="progress-bar" value="90" max="100"></progress><p class="language-name mb-2">Senior</p>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex flex-column align-items-center mb-4">
+                <img src="Portifolio/assets/imgs/servidor-sql.png" style="max-width: 200px;" alt="Logo Linguagem 1" class="img-fluid language-logo mb-2">
+                <p class="language-name mb-2">SQL</p>
+                <div class="progress-container">
+                    <progress class="progress-bar" value="70" max="100"></progress><p class="language-name mb-2">Pleno</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+        <?php // include "Portifolio.php";?>
+
+
+    
+
+
+
+        
+        <!-- Contact Section-->
+        <section class="page-section text-center py-5"  id="contact">
+            <div class="container">
+                <!-- Contact Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Me Contate</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Contact Section Form-->
+            
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- * * SB Forms Contact Form * *-->
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- This form is pre-integrated with SB Forms.-->
+                        <!-- To make this form functional, sign up at-->
+                        <!-- https://startbootstrap.com/solution/contact-forms-->
+                        <!-- to get an API token!-->
+                        
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card contact-card mx-auto">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Informações de Contato</h5>
+                            
+                            <div class="contact-info">
+                            <span>Meu LinkedIn ->:</span>
+                                <div class="icon-bg">
+                                    <i class="bi bi-linkedin"></i>
+                                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/jonata-mendes-08025b1a0/"><i class="fab fa-fw fa-linkedin"></i></a>
+                                </div>
+                                
+                            </div>
+                            <div class="contact-info">
+                                <div class="icon-bg">
+                                <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa fa-phone"></i></a>
+                                </div>
+                                <span>Telefone:+55 9998116-6090</span>
+                            </div>
+                            <div class="contact-info">
+                            <span>Meu GitHub -></span>
+                                <div class="icon-bg">
+                                <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/cybermago"><i class="fab fa-fw fa-github"></i></a>
+                                </div>
+                                
+                            </div>
+                            <div class="contact-info">
+                                <div class="icon-bg">
+                                <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-envelope-o"></i></a>
+                                </div>
+                                <span>Email: cybermagog@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+            </div>
+        </section>
+
+    
+                        
+                        
+                        
+
+
+        
+        <!-- Copyright Section-->
+        <div class="copyright py-4 text-center text-white">
+            <div class="container"><small>Copyright &copy; Minha Jornada 2024</small></div>
+        </div>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio Modal 1-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 2-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Tasty Cake</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 3-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Circus Tent</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/circus.png" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 4-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Controller</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/game.png" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 5-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Locked Safe</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/safe.png" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 6-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Submarine</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
